@@ -5,21 +5,21 @@
 class Lnk < Formula
   desc "Git-native dotfiles management that doesn't suck"
   homepage "https://github.com/yarlson/lnk"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/lnk/releases/download/v0.2.1/lnk_Darwin_x86_64.tar.gz"
-      sha256 "fdabb4c40bacae25659fea400a0115c444cd49c9603a35fd9d2573481de9d2ae"
+      url "https://github.com/yarlson/lnk/releases/download/v0.2.2/lnk_Darwin_x86_64.tar.gz"
+      sha256 "3db3e47b344322baa63240f72eb12a506cec4dc5255f27a985489e6144212743"
 
       def install
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/lnk/releases/download/v0.2.1/lnk_Darwin_arm64.tar.gz"
-      sha256 "c74a761d55e61de142aa4e2a9e977293033dcedd32496f6f3055a7bf5495e098"
+      url "https://github.com/yarlson/lnk/releases/download/v0.2.2/lnk_Darwin_arm64.tar.gz"
+      sha256 "0cbbd663f9e3a80c696d5013965be2200b92d49de9db4662b349414eb0a9ba1c"
 
       def install
         bin.install "lnk"
@@ -29,15 +29,15 @@ class Lnk < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.2.1/lnk_Linux_x86_64.tar.gz"
-      sha256 "b01812135a05fd89737270cff955787c5c815691f4cae656e8f6d0447cad8f6c"
+      url "https://github.com/yarlson/lnk/releases/download/v0.2.2/lnk_Linux_x86_64.tar.gz"
+      sha256 "cbfc026cff64883163c946273a77e347190b8cdb682b2354c88e3af980d95252"
       def install
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.2.1/lnk_Linux_arm64.tar.gz"
-      sha256 "e956c22d33d0956b87521fc87d08433f2132e4d4797d0aa7dea9009a65695217"
+      url "https://github.com/yarlson/lnk/releases/download/v0.2.2/lnk_Linux_arm64.tar.gz"
+      sha256 "68fa899907f5baf8efff9f25a9224de4be036b126b2c84c2a62c353ad4b94409"
       def install
         bin.install "lnk"
       end
