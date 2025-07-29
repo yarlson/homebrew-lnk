@@ -11,7 +11,7 @@ class Lnk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yarlson/lnk/releases/download/v0.4.0/lnk_Darwin_x86_64.tar.gz"
-      sha256 "d9be893057219e8e7bc8c025f9b4a58da46a6d244a18de0eb3f9d1429d1aeb13"
+      sha256 "a67e7043d6cbd9a26a164851939ae5850e89d56242d3f773d643b2b8ebb4559f"
 
       def install
         bin.install "lnk"
@@ -19,7 +19,7 @@ class Lnk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yarlson/lnk/releases/download/v0.4.0/lnk_Darwin_arm64.tar.gz"
-      sha256 "d6ca3132dffb01c3a1cf8319b47b63c6e317c59c36666b304a18d3448f7370cb"
+      sha256 "fadc3bec5a17f5f252f5394d34ab78d9071eb966c784145568a39dc835989ad3"
 
       def install
         bin.install "lnk"
@@ -30,14 +30,14 @@ class Lnk < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/yarlson/lnk/releases/download/v0.4.0/lnk_Linux_x86_64.tar.gz"
-      sha256 "b3cbfb9bcdde95d2fac3c4012988084eff28138b083fc63a39bb5a16f69b92e4"
+      sha256 "e2be487437387c2c6016bb3096d5cb97bda7990d60b4e044862b156240d1de8b"
       def install
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/yarlson/lnk/releases/download/v0.4.0/lnk_Linux_arm64.tar.gz"
-      sha256 "a15379c68d0e331a43a83200679bf94cc3e194dd0cddc9cd544c0c3a9dfce9e9"
+      sha256 "a0670955b1b4f7c41a973afaddbd4518eadb660e23fda348b5247c006665512b"
       def install
         bin.install "lnk"
       end
