@@ -5,21 +5,21 @@
 class Lnk < Formula
   desc "Git-native dotfiles management that doesn't suck"
   homepage "https://github.com/yarlson/lnk"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/lnk/releases/download/v0.6.0/lnk_Darwin_x86_64.tar.gz"
-      sha256 "a425e18cd0f477d786336817d7bed2f06f9b8d852d910b413b0f7edfaa8d3a25"
+      url "https://github.com/yarlson/lnk/releases/download/v0.7.0/lnk_Darwin_x86_64.tar.gz"
+      sha256 "0cb387841da6f38951452f53197715b665181d46f1c2a353bc6e149117eb3e58"
 
       def install
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/lnk/releases/download/v0.6.0/lnk_Darwin_arm64.tar.gz"
-      sha256 "0bd5bb1027a56d6f2f5c83d3e759074b058b39c7f8546c8c3fae4fb8c31988ff"
+      url "https://github.com/yarlson/lnk/releases/download/v0.7.0/lnk_Darwin_arm64.tar.gz"
+      sha256 "fd45a4b1c43022ae8fcaf086a49f010026779a3d56f91dec4d79586387d9aca3"
 
       def install
         bin.install "lnk"
@@ -28,16 +28,16 @@ class Lnk < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.6.0/lnk_Linux_x86_64.tar.gz"
-      sha256 "12465d0bbf7b3f4f14028b7e34c5f9ff0fd36045af9591a0bcced873abc19470"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yarlson/lnk/releases/download/v0.7.0/lnk_Linux_x86_64.tar.gz"
+      sha256 "cb46d1ea12e81140cf5f5ba761fbd5028b18a9451516d0a70d20a087f9f62d8d"
       def install
         bin.install "lnk"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.6.0/lnk_Linux_arm64.tar.gz"
-      sha256 "10d604681c5bfb933a2d2e2097f944ca39fe0b386009246a9d510aa8e2f029af"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yarlson/lnk/releases/download/v0.7.0/lnk_Linux_arm64.tar.gz"
+      sha256 "9d3480c9fc65ee24eeec25eb3308e74ae7c917600b9dcdb44cfc7d4cbd5513a0"
       def install
         bin.install "lnk"
       end
