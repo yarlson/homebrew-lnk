@@ -5,21 +5,21 @@
 class Lnk < Formula
   desc "Git-native dotfiles management that doesn't suck"
   homepage "https://github.com/yarlson/lnk"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/lnk/releases/download/v0.8.0/lnk_Darwin_x86_64.tar.gz"
-      sha256 "c5d06b52c986bb851c3630ef5c601e2f7959555e13a908ea4d32783ee562ec7c"
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Darwin_x86_64.tar.gz"
+      sha256 "d1b949847214c986bfa7ad205bb44a0e515717a165c2b0a20c9c408bb3f09d48"
 
       def install
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/lnk/releases/download/v0.8.0/lnk_Darwin_arm64.tar.gz"
-      sha256 "08f7b279365ef3f93aa10f537470e854bbc0bbc513369cab80b3b8b407659c37"
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Darwin_arm64.tar.gz"
+      sha256 "94b6c63cbc641cb0a83e0e439c3615a1d6203f216f67b457f027f365410ddc4b"
 
       def install
         bin.install "lnk"
@@ -29,15 +29,15 @@ class Lnk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.8.0/lnk_Linux_x86_64.tar.gz"
-      sha256 "29093f53f4db574f8901806e0f222845800b510d8a60b9d97ad81d24071cdbb5"
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Linux_x86_64.tar.gz"
+      sha256 "f83e2895abf48211b9dffe85fede359d3c8968ee087c3673ef70399979ad3f3a"
       def install
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.8.0/lnk_Linux_arm64.tar.gz"
-      sha256 "863f15de099664894209994722316bdab3e913bf3b80d9546136382e763f2235"
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Linux_arm64.tar.gz"
+      sha256 "ef407bde578be75f1ff57c8accd3cb7419ef4429a3dfcaf26e0f998522d9d079"
       def install
         bin.install "lnk"
       end
