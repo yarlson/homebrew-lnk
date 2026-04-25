@@ -5,23 +5,23 @@
 class Lnk < Formula
   desc "Git-native dotfiles management that doesn't suck"
   homepage "https://github.com/yarlson/lnk"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Darwin_x86_64.tar.gz"
-      sha256 "d1b949847214c986bfa7ad205bb44a0e515717a165c2b0a20c9c408bb3f09d48"
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.1/lnk_Darwin_x86_64.tar.gz"
+      sha256 "03283cc6593e24117ee8d6baa54b151471fbe53ccd636598311536ca7b5ebc53"
 
-      def install
+      define_method(:install) do
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Darwin_arm64.tar.gz"
-      sha256 "94b6c63cbc641cb0a83e0e439c3615a1d6203f216f67b457f027f365410ddc4b"
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.1/lnk_Darwin_arm64.tar.gz"
+      sha256 "e2f548de5746cfbacc01e2e4c5d232377c1e5d1d04188c81838271cab65a1905"
 
-      def install
+      define_method(:install) do
         bin.install "lnk"
       end
     end
@@ -29,16 +29,16 @@ class Lnk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Linux_x86_64.tar.gz"
-      sha256 "f83e2895abf48211b9dffe85fede359d3c8968ee087c3673ef70399979ad3f3a"
-      def install
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.1/lnk_Linux_x86_64.tar.gz"
+      sha256 "e8e658ad04089b3e36ef56630f1cbf1b1f980ca68161823763d429fb4caa7acf"
+      define_method(:install) do
         bin.install "lnk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/lnk/releases/download/v0.9.0/lnk_Linux_arm64.tar.gz"
-      sha256 "ef407bde578be75f1ff57c8accd3cb7419ef4429a3dfcaf26e0f998522d9d079"
-      def install
+      url "https://github.com/yarlson/lnk/releases/download/v0.9.1/lnk_Linux_arm64.tar.gz"
+      sha256 "c81b062f78c16798f4338c6b9145c39347dec1e96fc6d77f00b2921da6b0fdeb"
+      define_method(:install) do
         bin.install "lnk"
       end
     end
